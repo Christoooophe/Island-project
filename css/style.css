@@ -1,0 +1,113 @@
+*{
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+}
+body{
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.262) 31%, rgba(0, 0, 0, 0.247) 31%, rgba(0, 0, 0, 0.411) 31%) ,url('../assets/pexels-max-ravier-2253821.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+#parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: linear-gradient(270deg, rgba(0,0,0,0.073564459963673) 31%, rgba(0, 0, 0, 0.247) 54%, rgba(0, 0, 0, 0.411) 100%), url('../assets/pexels-max-ravier-2253821.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    height: 90vh;
+    margin: auto;
+    width: 80%;
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+
+    }
+    
+    .header_left {
+         grid-area: 2 / 2 / 3 / 4;
+         height: 100px;
+    }
+    .header_right {
+         grid-area: 2 / 7 / 3 / 12; 
+    }
+    .container_left {
+         grid-area: 4 / 2 / 9 / 7;
+
+    }
+    .social {
+         grid-area: 10 / 2 / 12 / 3;
+    }
+    .bullets {
+         grid-area: 10 / 10 / 11 / 12;
+    }
+    /*.header_left, .header_right,.container_left,.social,.bullets{
+        border: solid 1px rgb(255, 255, 255);
+    }*/
+.header_right ul{
+    background: linear-gradient(90deg, rgba(0,0,0,0.073564459963673) 0%, rgba(0, 0, 0, 0.301) 8%, rgba(0, 0, 0, 0.279) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.header_right li{
+    font-size: 20px;
+}
+.header_left p{
+    font-size: 20px;
+}
+.big_sentence h3{
+    font-size: 30px;
+    line-height: 0;
+}
+.big_sentence h1{
+    font-size: 80px;
+}
+.big_sentence h1, .big_sentence h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#btn-2{
+    background-color: transparent;
+    border-color: white;
+}
+#btn-1{
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+}
+#btn-1, #btn-2{
+    border-radius: 5px;
+    height: 30px;
+    width: 180px;
+}
+.social ol{
+    left: 150px;
+    list-style-type: none;
+    position: fixed;
+}
+.social img{
+    height: 25px;
+    width: 25px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+    margin-bottom: 50px;
+}
+.dot:active{
+    background-color: aqua;
+}
